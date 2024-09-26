@@ -1,12 +1,12 @@
 import React from 'react';
 import { songsData } from '../assets/assets';
 import { IoIosShuffle, IoIosSkipBackward, IoIosSkipForward, IoIosPlay, IoIosInfinite } from "react-icons/io";
+import { AiOutlinePlaySquare } from "react-icons/ai";
+import { TbMicrophone2 } from "react-icons/tb";
 import { HiOutlineQueueList, HiOutlineSpeakerWave } from "react-icons/hi2";
 import { LuMonitorSpeaker } from "react-icons/lu";
 import { CgMiniPlayer } from "react-icons/cg";
 import { RiExpandDiagonalLine } from "react-icons/ri";
-import { TbMicrophone2 } from "react-icons/tb";
-import { AiOutlinePlaySquare } from "react-icons/ai";
 
 const MusicPlayer = () => {
   return (
