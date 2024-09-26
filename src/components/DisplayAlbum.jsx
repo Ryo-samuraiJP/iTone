@@ -42,7 +42,7 @@ const DisplayAlbum = () => {
       <hr className='border-1 border-slate-700 mb-3'/>
       {
         songsData.map((item, index) => (
-          <div key={index} className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.4fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'>
+          <div key={index} className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.35fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'>
             <div className='text-white flex items-center'>
               <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
