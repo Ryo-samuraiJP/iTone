@@ -2,7 +2,6 @@ import bell_icon from './bell.png'
 import like_icon from './like.png'
 import pause_icon from './pause.png'
 import spotify_logo from './spotify_logo.png'
-import clock_icon from './clock_icon.png'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
@@ -28,7 +27,6 @@ export const assets = {
     like_icon,
     pause_icon,
     spotify_logo,
-    clock_icon
 }
 
 export const albumsData = [
