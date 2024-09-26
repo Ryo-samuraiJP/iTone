@@ -8,7 +8,7 @@ import { RiExpandDiagonalLine } from "react-icons/ri";
 import { TbMicrophone2 } from "react-icons/tb";
 import { AiOutlinePlaySquare } from "react-icons/ai";
 
-const Player = () => {
+const MusicPlayer = () => {
   return (
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
       <div className='hidden lg:flex items-center gap-4'>
@@ -48,4 +48,4 @@ const Player = () => {
   );
 }
 
-export default Player;
+export default MusicPlayer;
