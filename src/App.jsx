@@ -1,14 +1,11 @@
-import React from 'react';
-import Sidebar from './components/Sidebar';
+import React from 'react'
 
 const App = () => {
   return (
-    <div className='h-screen bg-black'>
-      <div className='h-[90%] flex'>
-        <Sidebar />
-      </div>
+    <div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
