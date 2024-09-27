@@ -3,12 +3,15 @@ import { AiFillHome } from "react-icons/ai";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineLibraryMusic } from "react-icons/md";
 import { GoPlus } from "react-icons/go";
+import { useNavigate } from 'react-router-dom';
 
-function Sidebar() {
+const Sidebar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
       <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
-        <div className='flex items-center gap-3 pl-8 cursor-pointer'>
+        <div onClick={() => navigate('/')} className='flex items-center gap-3 pl-8 cursor-pointer'>
           <AiFillHome className='text-2xl'/>
           <p className=''></p>
         </div>
