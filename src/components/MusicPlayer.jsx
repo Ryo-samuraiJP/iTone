@@ -9,7 +9,7 @@ import { RiExpandDiagonalLine } from "react-icons/ri";
 import { PlayerContext } from '../context/PlayerContext';
 
 const MusicPlayer = () => {
-  const {track, seekBg, seekBar, playStatus, play, pause, time} = useContext(PlayerContext);
+  const {track, seekBg, seekBar, playStatus, play, pause, time, playPrev, playNext} = useContext(PlayerContext);
 
   return (
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
@@ -23,12 +23,12 @@ const MusicPlayer = () => {
       <div className='flex flex-col items-center gap-1 m-auto'>
         <div className='flex gap-2'>
           <IoIosShuffle className='text-2xl cursor-pointer' />
-          <IoIosSkipBackward className='text-2xl cursor-pointer' />
+          <IoIosSkipBackward onClick={playPrev} className='text-2xl cursor-pointer' />
           {playStatus 
             ? <IoIosPause onClick={pause} className='text-2xl cursor-pointer' />
             : <IoIosPlay onClick={play} className='text-2xl cursor-pointer' />
           }
-          <IoIosSkipForward className='text-2xl cursor-pointer' />
+          <IoIosSkipForward onClick={playNext} className='text-2xl cursor-pointer' />
           <IoIosInfinite className='text-2xl cursor-pointer' />
         </div>
         <div className='flex items-center gap-5'>
