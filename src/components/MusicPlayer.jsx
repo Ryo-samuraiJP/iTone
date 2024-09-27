@@ -9,7 +9,7 @@ import { RiExpandDiagonalLine } from "react-icons/ri";
 import { PlayerContext } from '../context/PlayerContext';
 
 const MusicPlayer = () => {
-  const {track, seekBg, seekBar, playStatus, play, pause, time, playPrev, playNext} = useContext(PlayerContext);
+  const {track, seekBg, seekBar, seekPoint, playStatus, play, pause, time, playPrev, playNext} = useContext(PlayerContext);
 
   return (
     <div className='h-[10%] bg-black flex justify-between items-center text-white px-4'>
@@ -33,7 +33,7 @@ const MusicPlayer = () => {
         </div>
         <div className='flex items-center gap-5'>
           <p>{time.currentTime.minute}:{time.currentTime.second}</p>
-          <div ref={seekBg} className='w-[60vw] max-w-[500px] bg-gray-500 rounded-full cursor-pointer'>
+          <div ref={seekBg} onClick={seekPoint} className='w-[60vw] max-w-[500px] bg-gray-500 rounded-full cursor-pointer'>
             <hr ref={seekBar} className='h-1 border-none w-0 bg-gray-200 rounded-full' />
           </div>
           <p>{time.totalTime.minute}:{time.totalTime.second}</p>
