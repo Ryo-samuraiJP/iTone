@@ -39,6 +39,8 @@ const PlayerContextProvider = (props) => {
         const totalSec = Math.floor(audioRef.current.duration % 60);
         const totalMin = Math.floor(audioRef.current.duration / 60);
 
+        seekBar.current.style.width = (Math.floor(audioRef.current.currentTime / audioRef.current.duration * 100)) + '%';
+
         setTime({
           currentTime: {
             second: currentSec < 10 ? `0${currentSec}` : currentSec,
