@@ -123,7 +123,7 @@ export const assets = {
 }
 
 export const albumsData = [
-  {   
+  {
     id: 0,
     name: "Pop",
     image: img1,
