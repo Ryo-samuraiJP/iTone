@@ -1,5 +1,5 @@
 import { createContext, useRef, useState, useEffect } from "react";
-import { popSongs } from "../assets/assets";
+import { alternativeSongs, edmSongs, hiphopSongs, houseSongs, jpopSongs, popSongs, rbSongs, rockSongs } from "../assets/assets";
 
 export const PlayerContext = createContext();
 
@@ -31,8 +31,34 @@ const PlayerContextProvider = (props) => {
     setPlayStatus(false);
   }
 
-  const playWithId = async (id) => {
-    await setTrack(popSongs[id]);
+  const playWithId = async (id, genre) => {
+    let songs;
+    switch (genre) {
+      case 'EDM':
+        songs = edmSongs;
+        break;
+      case 'Hip Hop / Rap':
+        songs = hiphopSongs;
+        break;
+      case 'R&B':
+        songs = rbSongs;
+        break;
+      case 'House':
+        songs = houseSongs;
+        break;
+      case 'Rock':
+        songs = rockSongs;
+        break;
+      case 'J-Pop':
+        songs = jpopSongs;
+        break;
+      case 'Alternative':
+        songs = alternativeSongs;
+        break;
+      default:
+        songs = popSongs;
+    }
+    await setTrack(songs[id]);
     await audioRef.current.play();
     setPlayStatus(true);
   }
@@ -84,14 +110,10 @@ const PlayerContextProvider = (props) => {
   const contextValue = {  
     audioRef,
     seekBg,
-    seekBar,
-    seekPoint,
-    track,
-    setTrack,
-    playStatus,
-    setPlayStatus,
-    time,
-    setTime,
+    seekBar, seekPoint,
+    track, setTrack,
+    playStatus, setPlayStatus,
+    time, setTime,
     play,
     pause,
     playWithId,
