@@ -1,5 +1,5 @@
 import { createContext, useRef, useState, useEffect } from "react";
-import { songsData } from "../assets/assets";
+import { popSongs } from "../assets/assets";
 
 export const PlayerContext = createContext();
 
@@ -8,7 +8,7 @@ const PlayerContextProvider = (props) => {
   const seekBg = useRef();
   const seekBar = useRef();
 
-  const [track, setTrack] = useState(songsData[0]);
+  const [track, setTrack] = useState(popSongs[0]);
   const [playStatus, setPlayStatus] = useState(false);
   const [time, setTime] = useState({
     currentTime: {
@@ -32,22 +32,22 @@ const PlayerContextProvider = (props) => {
   }
 
   const playWithId = async (id) => {
-    await setTrack(songsData[id]);
+    await setTrack(popSongs[id]);
     await audioRef.current.play();
     setPlayStatus(true);
   }
 
   const playPrev = async () => {
     if (track.id > 0) {
-      await setTrack(songsData[track.id - 1]);
+      await setTrack(popSongs[track.id - 1]);
       await audioRef.current.play();
       setPlayStatus(true);
     }
   }
 
   const playNext = async () => {
-    if (track.id < songsData.length - 1) {
-      await setTrack(songsData[track.id + 1]);
+    if (track.id < popSongs.length - 1) {
+      await setTrack(popSongs[track.id + 1]);
       await audioRef.current.play();
       setPlayStatus(true);
     }
