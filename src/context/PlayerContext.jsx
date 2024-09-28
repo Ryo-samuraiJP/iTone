@@ -20,6 +20,7 @@ const PlayerContextProvider = (props) => {
       minute: 0
     }
   });
+  const [currentSongs, setCurrentSongs] = useState(popSongs); 
 
   const play = () => {
     audioRef.current.play();
@@ -58,22 +59,25 @@ const PlayerContextProvider = (props) => {
       default:
         songs = popSongs;
     }
+    setCurrentSongs(songs);
     await setTrack(songs[id]);
     await audioRef.current.play();
     setPlayStatus(true);
   }
 
   const playPrev = async () => {
-    if (track.id > 0) {
-      await setTrack(popSongs[track.id - 1]);
+    const currentIndex = currentSongs.findIndex(song => song.id === track.id);
+    if (currentIndex > 0) {
+      await setTrack(currentSongs[currentIndex - 1]);
       await audioRef.current.play();
       setPlayStatus(true);
     }
   }
 
   const playNext = async () => {
-    if (track.id < popSongs.length - 1) {
-      await setTrack(popSongs[track.id + 1]);
+    const currentIndex = currentSongs.findIndex(song => song.id === track.id);
+    if (currentIndex < currentSongs.length - 1) {
+      await setTrack(currentSongs[currentIndex + 1]);
       await audioRef.current.play();
       setPlayStatus(true);
     }
