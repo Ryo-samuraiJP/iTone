@@ -59,10 +59,15 @@ const PlayerContextProvider = (props) => {
       default:
         songs = popSongs;
     }
-    setCurrentSongs(songs);
-    await setTrack(songs[id]);
-    await audioRef.current.play();
-    setPlayStatus(true);
+
+    if (track.id === songs[id].id && playStatus) {
+      pause();
+    } else {
+      setCurrentSongs(songs);
+      await setTrack(songs[id]);
+      await audioRef.current.play();
+      setPlayStatus(true);
+    }
   }
 
   const playPrev = async () => {
