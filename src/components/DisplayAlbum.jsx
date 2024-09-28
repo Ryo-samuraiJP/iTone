@@ -1,15 +1,37 @@
 import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import { useParams } from 'react-router-dom';
-import { albumsData, assets, songsData } from '../assets/assets';
+import { albumsData, alternativeSongs, assets, edmSongs, hiphopSongs, houseSongs, jpopSongs, popSongs, rbSongs, rockSongs } from '../assets/assets';
 import { LuClock } from "react-icons/lu";
 import { PlayerContext } from '../context/PlayerContext';
 
 const DisplayAlbum = () => {
-  const {id} = useParams();
+  const { id } = useParams();
   const albumData = albumsData[id];
-  const {playWithId} = useContext(PlayerContext);
+  const { playWithId } = useContext(PlayerContext);
 
+  const getSongsByGenre = (genre) => {
+    switch (genre) {
+      case 'EDM':
+        return edmSongs;
+      case 'Hip Hop / Rap':
+        return hiphopSongs;
+      case 'R&B':
+        return rbSongs;
+      case 'House':
+        return houseSongs;
+      case 'Rock':
+        return rockSongs;
+      case 'J-Pop':
+        return jpopSongs;
+      case 'Alternative':
+        return alternativeSongs;
+      default:
+        return popSongs;
+    }
+  };
+
+  const songsByGenre = getSongsByGenre(albumData.name);
 
   return (
     <>
@@ -42,18 +64,18 @@ const DisplayAlbum = () => {
       </div>
       <hr className='border-1 border-slate-700 mb-3'/>
       {
-        songsData.map((item, index) => (
+        songsByGenre.map((item, index) => (
           <div onClick={() => playWithId(item.id)} key={index} className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.35fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'>
             <div className='text-white flex items-center'>
               <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
               <span className='inline-block'>
                 <span className=''>{item.name}</span>
-                <span className='block text-sm text-[#a7a7a7]'>{item.desc}</span>
+                <span className='block text-sm text-[#a7a7a7]'>{item.artist}</span>
               </span>
             </div>
             <div className='flex items-center'>
-              <p className='text-[15px]'>{albumData.name}</p>
+              <p className='text-[15px]'>{item.album}</p>
             </div>
             <div className='flex items-center'>
               <p className='text-[15px] hidden sm:block'>5 weeks ago</p>
