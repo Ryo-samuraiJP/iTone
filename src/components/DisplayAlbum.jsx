@@ -36,45 +36,59 @@ const DisplayAlbum = () => {
         return popSongs;
     }
   };
-
+  
   const songsByGenre = getSongsByGenre(albumData.name);
 
+  const convertToSeconds = (duration) => {
+    const [minutes, seconds] = duration.split(':').map(Number);
+    return (minutes * 60) + seconds;
+  };
+  
+  const totalDurationInSeconds = songsByGenre.reduce((total, song) => {
+    const durationInSeconds = convertToSeconds(song.duration);
+    return total + durationInSeconds;
+  }, 0);
+  
+  const totalDurationInMinutes = Math.floor(totalDurationInSeconds / 60);
+  const hours = Math.floor(totalDurationInMinutes / 60);
+  const minutes = totalDurationInMinutes % 60;
+    
   return (
-    <>
-      <Navbar />
-      <div className='mt-10 flex gap-8 flex-col md:flex-row md:items-end'>
-        <img className='w-48 rounded' src={albumData.image} alt='' />
-        <div className='flex flex-col'>
-          <p>Playlist</p>
-          <h2 className='text-5xl font-bold mb-4 md:text-7xl'>{albumData.name}</h2>
-          <h4>{albumData.desc}</h4>
-          <p className='mt-1 items-center justify-between'>
-            <span>
-              <img className='inline-block w-5' src={assets.logo} alt='' />
-              <b> Spotify</b>
-            </span>
-            <span className='text-gray-400'>
-              ・123,456 saves・{songsByGenre.length} songs, about 2 hr 30 min
-            </span>
-          </p>
+      <>
+        <Navbar />
+        <div className='mt-10 flex gap-8 flex-col md:flex-row md:items-end'>
+          <img className='w-48 rounded' src={albumData.image} alt='' />
+          <div className='flex flex-col'>
+            <p>Playlist</p>
+            <h2 className='text-5xl font-bold mb-6 md:text-7xl'>{albumData.name}</h2>
+            <h4 className='mb-2'>{albumData.desc}</h4>
+            <p className='mb-1 items-center justify-between'>
+              <span>
+                <img className='inline-block w-5 mr-2' src={assets.logo} alt='' />
+                <b>iTone</b>
+              </span>
+              <span className='text-gray-400'>
+                ・{songsByGenre.length} songs, about {hours} hr {minutes} min
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div className='grid grid-cols-[2fr_2fr_0.5fr_0.4fr] sm:grid-cols-[2fr_2fr_0.5fr_0.4fr] mt-10 mb-2 pl-2 text-[#a7a7a7]'>
-        <span className='items-center justify-between'>
-          <p className='mr-4 inline-block font-semibold'>#</p>
-          <p className='inline-block'>Title</p>
-        </span>
-        <p className=''>Album</p>
-        <p className='hidden sm:block'>Date added</p>
-        <LuClock className='m-auto text-lg' />
-      </div>
-      <hr className='border-1 border-slate-700 mb-3'/>
-      {
-        songsByGenre.map((item, index) => (
+        <div className='grid grid-cols-[2fr_2fr_0.5fr_0.4fr] sm:grid-cols-[2fr_2fr_0.5fr_0.4fr] mt-10 mb-2 pl-2 text-[#a7a7a7]'>
+          <span className='items-center justify-between'>
+            <p className='mr-4 inline-block font-semibold'>#</p>
+            <p className='inline-block'>Title</p>
+          </span>
+          <p className=''>Album</p>
+          <p className='hidden sm:block'>Release</p>
+          <LuClock className='m-auto text-lg' />
+        </div>
+        <hr className='border-1 border-slate-700 mb-3'/>
+        {
+          songsByGenre.map((item, index) => (
           <div 
             onClick={() => playWithId(index, albumData.name)} // Pass the correct index
             key={index}
-            className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.35fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
+            className='grid grid-cols-[2fr_2fr_0.5fr_0.3fr] sm:grid-cols-[2fr_2fr_0.5fr_0.3fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
           >
             <div className='text-white flex items-center'>
               <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
@@ -88,7 +102,7 @@ const DisplayAlbum = () => {
               <p className='text-[15px]'>{item.album}</p>
             </div>
             <div className='flex items-center'>
-              <p className='text-[15px] hidden sm:block'>5 weeks ago</p>
+              <p className='text-[15px] hidden sm:block'>{item.release}</p>
             </div>
             <div className='flex items-center justify-center'>
               <p className='text-[15px]'>{item.duration}</p>
