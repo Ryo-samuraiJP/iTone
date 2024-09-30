@@ -54,7 +54,7 @@ const DisplayAlbum = () => {
               <b> Spotify</b>
             </span>
             <span className='text-gray-400'>
-              ・123,456 saves・50 songs, about 2 hr 30 min
+              ・123,456 saves・{songsByGenre.length} songs, about 2 hr 30 min
             </span>
           </p>
         </div>
@@ -72,10 +72,10 @@ const DisplayAlbum = () => {
       {
         songsByGenre.map((item, index) => (
           <div 
-            onClick={() => playWithId(item.id, albumData.name)}
+            onClick={() => playWithId(index, albumData.name)} // Pass the correct index
             key={index}
             className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.35fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
-            >
+          >
             <div className='text-white flex items-center'>
               <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
