@@ -141,6 +141,7 @@ export const popSongs = [
     name: 'Versace On The Floor',
     artist: 'Bruno Mars',
     album: '24K Magic',
+    release: '2016',
     duration: '4:21'
   },
   {
@@ -150,6 +151,7 @@ export const popSongs = [
     name: 'Loser',
     artist: 'Charlie Puth',
     album: 'CHARLIE',
+    release: '2019',
     duration: '3:24'
   },
   {
@@ -159,6 +161,7 @@ export const popSongs = [
     name: 'Watermelon Sugar',
     artist: 'Harry Styles',
     album: 'Fine Line',
+    release: '2019',
     duration: '2:54'
   },
   {
@@ -168,6 +171,7 @@ export const popSongs = [
     name: 'Levitating (feat. DaBaby)',
     artist: 'Dua Lipa',
     album: 'Future Nostalgia',
+    release: '2020',
     duration: '3:23'
   },
   {
@@ -177,6 +181,7 @@ export const popSongs = [
     name: 'Sucker',
     artist: 'Jonas Brothers',
     album: 'Happiness Begins',
+    release: '2019',
     duration: '3:01'
   },
   {
@@ -186,6 +191,7 @@ export const popSongs = [
     name: 'Don\'t Call Me Up',
     artist: 'Mabel',
     album: 'Ivy to Roses (Mixtape)',
+    release: '2019',
     duration: '2:58'
   },
   {
@@ -195,6 +201,7 @@ export const popSongs = [
     name: 'Shape of You',
     artist: 'Ed Sheeran',
     album: '÷',
+    release: '2017',
     duration: '3:54'
   },
   {
@@ -204,6 +211,7 @@ export const popSongs = [
     name: 'Sugar',
     artist: 'Maroon 5',
     album: 'Singles',
+    release: '2014',
     duration: '3:55'
   },
   {
@@ -213,6 +221,7 @@ export const popSongs = [
     name: 'When I Was Your Man',
     artist: 'Bruno Mars',
     album: 'Unorthodox Jukebox',
+    release: '2012',
     duration: '3:34'
   },
   {
@@ -222,6 +231,7 @@ export const popSongs = [
     name: 'Sunroof',
     artist: 'Nicky Youre & Dazy',
     album: 'Sunroof - Single',
+    release: '2021',
     duration: '2:25'
   }
 ]
@@ -234,6 +244,7 @@ export const edmSongs = [
     name: 'Closer (feat. Halsay)',
     artist: 'The Chainsmokers',
     album: 'Closer (feat. Halsay) - Single',
+    release: '2016',
     duration: '4:05'
   },
   {
@@ -243,6 +254,7 @@ export const edmSongs = [
     name: 'Wake Me Up',
     artist: 'Avicii',
     album: 'True',
+    release: '2013',
     duration: '4:08'
   },
   {
@@ -252,6 +264,7 @@ export const edmSongs = [
     name: 'There Are the Times (feat. JRM)',
     artist: 'Martin Garrix',
     album: 'There Are the Times (feat. JRM) - Single',
+    release: '2019',
     duration: '3:09'
   },
   {
@@ -261,6 +274,7 @@ export const edmSongs = [
     name: 'Stay',
     artist: 'Zedd & Alessia Cara',
     album: 'Stay - Single',
+    release: '2017',
     duration: '3:30'
   },
   {
@@ -270,6 +284,7 @@ export const edmSongs = [
     name: 'Rasputin',
     artist: 'Majestic, Boney M.',
     album: 'Rasputin - Single',
+    release: '2021',
     duration: '3:07'
   },
   {
@@ -279,6 +294,7 @@ export const edmSongs = [
     name: 'I\'m Good (Blue)',
     artist: 'David Guetta & Bebe Rexha',
     album: 'I\'m Good (Blue) - Single',
+    release: '2022',
     duration: '2:55'
   },
   {
@@ -288,6 +304,7 @@ export const edmSongs = [
     name: 'Rise (feat. Jack & Jack)',
     artist: 'Jonas Blue',
     album: 'Blue',
+    release: '2018',
     duration: '3:14'
   },
   {
@@ -297,6 +314,7 @@ export const edmSongs = [
     name: 'Addicted To You',
     artist: 'Avicii',
     album: 'True',
+    release: '2013',
     duration: '2:28'
   },
   {
@@ -306,6 +324,7 @@ export const edmSongs = [
     name: 'We Found Love (feat. Rihanna)',
     artist: 'Calvin Harris',
     album: '18 Months',
+    release: '2012',
     duration: '3:35'
   },
   {
@@ -315,6 +334,7 @@ export const edmSongs = [
     name: 'Waiting For Love',
     artist: 'Avicii',
     album: 'Stories',
+    release: '2015',
     duration: '3:51'
   }
 ]
@@ -327,6 +347,7 @@ export const hiphopSongs = [
     name: 'Sill D.R.E. (feat. Snoop Dogg)',
     artist: 'Dr. Dre',
     album: '2001',
+    release: '1999',
     duration: '4:31'
   },
   {
@@ -336,6 +357,7 @@ export const hiphopSongs = [
     name: 'Circles',
     artist: 'Post Malone',
     album: 'Hollywood\'s Bleeding',
+    release: '2019',
     duration: '3:35'
   },
   {
@@ -345,6 +367,7 @@ export const hiphopSongs = [
     name: 'Players',
     artist: 'Coi Leray',
     album: 'Players - Single',
+    release: '2022',
     duration: '2:20'
   },
   {
@@ -354,6 +377,7 @@ export const hiphopSongs = [
     name: 'Young, Wild & Free (feat. Bruno Mars)',
     artist: 'Snoop Dogg & Wiz Khalifa',
     album: 'Young, Wild & Free (feat. Bruno Mars) - Single',
+    release: '2011',
     duration: '3:27'
   },
   {
@@ -363,6 +387,7 @@ export const hiphopSongs = [
     name: 'Beautiful Girls',
     artist: 'Sean Kingston',
     album: 'Beautiful Girls - Single',
+    release: '2007',
     duration: '3:45'
   },
   {
@@ -372,6 +397,7 @@ export const hiphopSongs = [
     name: 'Arms Around You (feat. Maluma Swea Lee)',
     artist: 'XXXTENTACTION & Lil Pump',
     album: 'Arms Around You (feat. Maluma Swea Lee) - Single',
+    release: '2018',
     duration: '3:19'
   },
   {
@@ -381,6 +407,7 @@ export const hiphopSongs = [
     name: 'Gangstart\'s Paradise',
     artist: 'Coolio',
     album: 'Gangstart\'s Paradise - Single',
+    release: '1995',
     duration: '4:01'
   },
   {
@@ -390,6 +417,7 @@ export const hiphopSongs = [
     name: 'Better Now',
     artist: 'Post Malone',
     album: 'beerbongs & bentleys',
+    release: '2018',
     duration: '3:51'
   }
 ]
@@ -402,6 +430,7 @@ export const rbSongs = [
     name: 'Blinding Lights',
     artist: 'The Weekend',
     album: 'After Hours',
+    release: '2020',
     duration: '3:22'
   },
   {
@@ -411,6 +440,7 @@ export const rbSongs = [
     name: 'Because of You',
     artist: 'Ne-Yo',
     album: 'Because of You',
+    release: '2007',
     duration: '4:27'
   },
   {
@@ -420,6 +450,7 @@ export const rbSongs = [
     name: 'Yeah 3X',
     artist: 'Chris Brown',
     album: 'F.A.M.E (Expanded Edition)',
+    release: '2011',
     duration: '4:01'
   },
   {
@@ -429,6 +460,7 @@ export const rbSongs = [
     name: 'September',
     artist: 'Earth, Wind & Fire',
     album: 'Greatest Hits',
+    release: '1998',
     duration: '3:35'
   },
   {
@@ -438,6 +470,7 @@ export const rbSongs = [
     name: 'All of Me',
     artist: 'John Legend',
     album: 'Love In The Future',
+    release: '2013',
     duration: '4:30'
   },
   {
@@ -447,6 +480,7 @@ export const rbSongs = [
     name: 'Take My Breath',
     artist: 'The Weekend',
     album: 'Take My Breath - Single',
+    release: '2021',
     duration: '3:40'
   }
 ]
@@ -459,6 +493,7 @@ export const houseSongs = [
     name: 'Another Time',
     artist: 'LiQWYD',
     album: 'Another Time - Single',
+    release: '2019',
     duration: '3:30'
   },
   {
@@ -468,6 +503,7 @@ export const houseSongs = [
     name: 'In My Soul',
     artist: 'Ehrling',
     album: 'In My Soul - Single',
+    release: '2020',
     duration: '3:15'
   },
   {
@@ -477,6 +513,7 @@ export const houseSongs = [
     name: 'Run Free (Radio Edit)[feat. IVIE]',
     artist: 'Deep Chills',
     album: 'Run Free (feat. IVIE) - Single',
+    release: '2017',
     duration: '2:51'
   },
   {
@@ -486,6 +523,7 @@ export const houseSongs = [
     name: 'Love Tonight (David Guetta Remix Edit)',
     artist: 'Shouse & David Guetta',
     album: 'Love Tonight (David Guetta Remix Edit) - Single',
+    release: '2021',
     duration: '2:38'
   }
 ]
@@ -498,6 +536,7 @@ export const rockSongs = [
     name: 'You Give Love a Bad Name',
     artist: 'Bon Jovi',
     album: 'Slippery When Wet',
+    release: '1986',
     duration: '3:43'
   },
   {
@@ -507,6 +546,7 @@ export const rockSongs = [
     name: 'Livin\' On a Prayer',
     artist: 'Bon Jovi',
     album: 'Slippery When Wet',
+    release: '1986',
     duration: '4:09'
   },
   {
@@ -516,6 +556,7 @@ export const rockSongs = [
     name: 'Viva La Vida',
     artist: 'Coldplay',
     album: 'Viva La Vida or Death and All His Friends',
+    release: '2008',
     duration: '4:02'
   },
   {
@@ -525,6 +566,7 @@ export const rockSongs = [
     name: '世界が終わるまでは...',
     artist: 'WANDS',
     album: 'WANDS Best: Historical Best Album',
+    release: '1997',
     duration: '5:16'
   },
   {
@@ -534,6 +576,7 @@ export const rockSongs = [
     name: '花占い',
     artist: 'Vaundy',
     album: 'replica',
+    release: '2023',
     duration: '3:28'
   },
   {
@@ -543,6 +586,7 @@ export const rockSongs = [
     name: 'I Don\'t Want to Miss a Thing',
     artist: 'Aerosmith',
     album: 'I Don\'t Want to Miss a Thing - Single',
+    release: '1998',
     duration: '4:59'
   },
   {
@@ -552,6 +596,7 @@ export const rockSongs = [
     name: 'Beggin',
     artist: 'Måneskin',
     album: 'Chosen',
+    release: '2017',
     duration: '3:32'
   },
   {
@@ -561,6 +606,7 @@ export const rockSongs = [
     name: 'One Way Ticket',
     artist: 'ONE OK ROCK',
     album: 'Ambitions',
+    release: '2017',
     duration: '3:37'
   },
   {
@@ -570,6 +616,7 @@ export const rockSongs = [
     name: 'ドライフラワー',
     artist: '優里',
     album: '壱',
+    release: '2022',
     duration: '4:46'
   },
   {
@@ -579,6 +626,7 @@ export const rockSongs = [
     name: '心絵',
     artist: 'ロードオブメジャー',
     album: '心絵 - EP',
+    release:  '2004',
     duration: '4:22'
   }
 ]
@@ -591,6 +639,7 @@ export const jpopSongs = [
     name: 'いとしのエリー',
     artist: 'サザンオールスターズ',
     album: '海のYeah!!',
+    release: '1998',
     duration: '4:25'
   },
   {
@@ -600,6 +649,7 @@ export const jpopSongs = [
     name: '廻廻奇奇譚',
     artist: 'Eve',
     album: '廻廻奇奇譚 - Single',
+    release: '2020',
     duration: '3:39'
   },
   {
@@ -609,6 +659,7 @@ export const jpopSongs = [
     name: '水平線',
     artist: 'back number',
     album: '水平線 - Single',
+    release: '2021',
     duration: '4:45'
   },
   {
@@ -618,6 +669,7 @@ export const jpopSongs = [
     name: 'ずっと好きだった',
     artist: '斉藤和義',
     album: 'ずっと好きだった - Single',
+    release: '2010',
     duration: '4:07'
   },
   {
@@ -627,6 +679,7 @@ export const jpopSongs = [
     name: 'I LOVE...',
     artist: 'Official髭男dism',
     album: 'Editorial',
+    release: '2021',
     duration: '4:41'
   },
   {
@@ -636,6 +689,7 @@ export const jpopSongs = [
     name: 'Rolling star',
     artist: 'YUI',
     album: 'GREEN GARDEN POP',
+    release: '2012',
     duration: '3:11'
   },
   {
@@ -645,6 +699,7 @@ export const jpopSongs = [
     name: 'DAN DAN 心魅かれてく',
     artist: 'FIELS OF VIEW',
     album: 'Singles Collection + 4',
+    release: '1997',
     duration: '3:32'
   }
 ]
@@ -657,6 +712,7 @@ export const alternativeSongs = [
     name: 'Someone You Loved',
     artist: 'Lewis Capaldi',
     album: 'Breach - EP',
+    release: '2018',
     duration: "3:02"
   },
   {
@@ -666,6 +722,7 @@ export const alternativeSongs = [
     name: 'Dance Monkey',
     artist: 'Tones And I',
     album: 'Dance Monkey - Single',
+    release: '2019',
     duration: "3:30"
   },
   {
@@ -675,6 +732,7 @@ export const alternativeSongs = [
     name: 'Someone To You',
     artist: 'BANNERS',
     album: 'Empires On Fire - EP',
+    release: '2017',
     duration: "3:39"
   },
   {
@@ -684,6 +742,7 @@ export const alternativeSongs = [
     name: 'Feel It Still',
     artist: 'Portugal. The Man',
     album: 'Feel It Still - Single',
+    release: '2017',
     duration: "2:43"
   },
   {
@@ -693,6 +752,7 @@ export const alternativeSongs = [
     name: 'A Sky Full of Stars',
     artist: 'Coldplay',
     album: 'Ghost Stories',
+    release: '2014',
     duration: "4:29"
   },
   {
@@ -702,6 +762,7 @@ export const alternativeSongs = [
     name: 'The Phoenix',
     artist: 'Fall Out Boy',
     album: 'Save Rock and Roll',
+    release: '2013',
     duration: "4:05"
   }
 ]
