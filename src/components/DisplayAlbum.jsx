@@ -1,37 +1,37 @@
 import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import { useParams } from 'react-router-dom';
-import { albumsData, alternativeSongs, assets, clubTop, edmSongs, globalTop, hiphopSongs, houseSongs, japanTop, jpopSongs, popSongs, rbSongs, rockSongs } from '../assets/assets';
+import { albumPlaylists, alternativeSongs, assets, clubHot, edmSongs, globalHot, hiphopSongs, houseSongs, japanHot, jpopSongs, popSongs, rbSongs, rockSongs } from '../assets/assets';
 import { LuClock } from "react-icons/lu";
 import { PlayerContext } from '../context/PlayerContext';
 
 const DisplayAlbum = () => {
   const { id } = useParams();
-  const albumData = albumsData[id];
+  const albumData = albumPlaylists[id];
   const { playWithId } = useContext(PlayerContext);
 
   const getSongsByGenre = (genre) => {
     switch (genre) {
-      case 'EDM':
+      case 'All EDM':
         return edmSongs;
-      case 'Hip Hop / Rap':
+      case 'All Hip Hop / Rap':
         return hiphopSongs;
-      case 'R&B':
+      case 'All R&B':
         return rbSongs;
-      case 'House':
+      case 'All House':
         return houseSongs;
-      case 'Rock':
+      case 'All Rock':
         return rockSongs;
-      case 'J-Pop':
+      case 'All J-Pop':
         return jpopSongs;
-      case 'Alternative':
+      case 'All Alternative':
         return alternativeSongs;
-      case 'Global':
-        return globalTop;
-      case 'Club': 
-        return clubTop;
-      case 'Japan':
-        return japanTop;
+      case 'Hot 30 Global':
+        return globalHot;
+      case 'Hot 20 Night Club': 
+        return clubHot;
+      case 'Hot 10 Japan':
+        return japanHot;
       default:
         return popSongs;
     }
@@ -50,11 +50,11 @@ const DisplayAlbum = () => {
           <h4>{albumData.desc}</h4>
           <p className='mt-1 items-center justify-between'>
             <span>
-              <img className='inline-block w-5' src={assets.spotify_logo} alt='' />
+              <img className='inline-block w-5' src={assets.logo} alt='' />
               <b> Spotify</b>
             </span>
             <span className='text-gray-400'>
-              ・123,456 saves・50 songs, about 2 hr 30 min
+              ・123,456 saves・{songsByGenre.length} songs, about 2 hr 30 min
             </span>
           </p>
         </div>
@@ -72,10 +72,10 @@ const DisplayAlbum = () => {
       {
         songsByGenre.map((item, index) => (
           <div 
-            onClick={() => playWithId(item.id, albumData.name)}
+            onClick={() => playWithId(index, albumData.name)} // Pass the correct index
             key={index}
             className='grid grid-cols-[2fr_2fr_0.5fr_0.35fr] sm:grid-cols-[2fr_2fr_0.5fr_0.35fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
-            >
+          >
             <div className='text-white flex items-center'>
               <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />

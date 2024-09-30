@@ -1,5 +1,5 @@
 import { createContext, useRef, useState, useEffect } from "react";
-import { alternativeSongs, clubTop, edmSongs, globalTop, hiphopSongs, houseSongs, japanTop, jpopSongs, popSongs, rbSongs, rockSongs } from "../assets/assets";
+import { alternativeSongs, clubHot, edmSongs, globalHot, hiphopSongs, houseSongs, japanHot, jpopSongs, popSongs, rbSongs, rockSongs } from "../assets/assets";
 
 export const PlayerContext = createContext();
 
@@ -35,35 +35,35 @@ const PlayerContextProvider = (props) => {
   const playWithId = async (id, genre) => {
     let songs;
     switch (genre) {
-      case 'EDM':
+      case 'All EDM':
         songs = edmSongs;
         break;
-      case 'Hip Hop / Rap':
+      case 'All Hip Hop / Rap':
         songs = hiphopSongs;
         break;
-      case 'R&B':
+      case 'All R&B':
         songs = rbSongs;
         break;
-      case 'House':
+      case 'All House':
         songs = houseSongs;
         break;
-      case 'Rock':
+      case 'All Rock':
         songs = rockSongs;
         break;
-      case 'J-Pop':
+      case 'All J-Pop':
         songs = jpopSongs;
         break;
-      case 'Alternative':
+      case 'All Alternative':
         songs = alternativeSongs;
         break;
-      case 'Global':
-        songs = globalTop;
+      case 'Hot 30 Global':
+        songs = globalHot;
         break;
-      case 'Club': 
-        songs = clubTop;
+      case 'Hot 20 Night Club': 
+        songs = clubHot;
         break;
-      case 'Japan':
-        songs = japanTop;
+      case 'Hot 10 Japan':
+        songs = japanHot;
         break;
       default:
         songs = popSongs;
