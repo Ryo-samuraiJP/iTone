@@ -11,7 +11,7 @@ const DisplayHome = () => {
     <>
       <Navbar />
       <div className='mb-4'>
-        <h1 className='my-5 font-bold text-2xl'>Select by genre</h1>
+        <h1 className='my-5 font-bold text-2xl'>Recommended for you</h1>
         <div className='flex overflow-auto'>
           {albumPlaylists.slice(0, 8).map((item, index) => (
             <AlbumItem 
@@ -19,7 +19,7 @@ const DisplayHome = () => {
               id={item.id} 
               name={item.name} 
               image={item.image} 
-              desc={item.desc} 
+              desc={item.desc.slice(0, 60) + ' ...'} 
               playWithId={playWithId}
             />
           ))}
