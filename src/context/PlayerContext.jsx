@@ -1,5 +1,5 @@
 import { createContext, useRef, useState, useEffect } from "react";
-import { alternativeSongs, edmSongs, hiphopSongs, houseSongs, jpopSongs, popSongs, rbSongs, rockSongs } from "../assets/assets";
+import { alternativeSongs, clubTop, edmSongs, globalTop, hiphopSongs, houseSongs, japanTop, jpopSongs, popSongs, rbSongs, rockSongs } from "../assets/assets";
 
 export const PlayerContext = createContext();
 
@@ -55,6 +55,15 @@ const PlayerContextProvider = (props) => {
         break;
       case 'Alternative':
         songs = alternativeSongs;
+        break;
+      case 'Global':
+        songs = globalTop;
+        break;
+      case 'Club': 
+        songs = clubTop;
+        break;
+      case 'Japan':
+        songs = japanTop;
         break;
       default:
         songs = popSongs;

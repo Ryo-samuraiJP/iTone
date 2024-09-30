@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import { useParams } from 'react-router-dom';
-import { albumsData, alternativeSongs, assets, edmSongs, hiphopSongs, houseSongs, jpopSongs, popSongs, rbSongs, rockSongs } from '../assets/assets';
+import { albumsData, alternativeSongs, assets, clubTop, edmSongs, globalTop, hiphopSongs, houseSongs, japanTop, jpopSongs, popSongs, rbSongs, rockSongs } from '../assets/assets';
 import { LuClock } from "react-icons/lu";
 import { PlayerContext } from '../context/PlayerContext';
 
@@ -26,6 +26,12 @@ const DisplayAlbum = () => {
         return jpopSongs;
       case 'Alternative':
         return alternativeSongs;
+      case 'Global':
+        return globalTop;
+      case 'Club': 
+        return clubTop;
+      case 'Japan':
+        return japanTop;
       default:
         return popSongs;
     }
