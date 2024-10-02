@@ -9,7 +9,7 @@ const Display = () => {
   const displayRef = useRef();
   const location = useLocation();
   const isAlbum = location.pathname.includes('album');
-  const albumId = isAlbum ? location.pathname.slice(-1) : '';
+  const albumId = isAlbum ? location.pathname.match(/album\/(\d+)/)[1] : '';
   const bgColor = albumPlaylists[Number(albumId)].bgColor;
 
   useEffect(() => {
