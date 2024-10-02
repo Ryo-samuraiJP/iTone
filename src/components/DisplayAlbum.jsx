@@ -65,14 +65,14 @@ const DisplayAlbum = () => {
     <>
       <Navbar />
       <div className='mt-10 flex gap-8 flex-col md:flex-row md:items-end'>
-        <img className='w-48 rounded' src={albumData.image} alt='' />
+        <img className='w-48 rounded' src={albumData.image} alt='album image' />
         <div className='flex flex-col'>
           <p>Playlist</p>
           <h2 className='text-5xl font-bold mb-6 md:text-7xl'>{albumData.name}</h2>
           <h4 className='mb-2'>{albumData.desc}</h4>
           <p className='mb-1 items-center justify-between'>
             <span>
-              <img className='inline-block w-5 mr-2' src={assets.logo} alt='' />
+              <img className='inline-block w-5 mr-2' src={assets.logo} alt='iTone logo' />
               <b>iTone</b>
             </span>
             <span className='text-gray-400'>
@@ -104,7 +104,7 @@ const DisplayAlbum = () => {
               ) : (
                 <b className='mr-4 text-[#a7a7a7] font-normal w-14 md:w-7 xl:w-6 text-right'>{index + 1}</b>
               )}
-              <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
+              <img className='inline w-10 mr-5 rounded' src={item.image} alt='each track image' />
               <span className='flex flex-col w-full'>
                 <span className='truncate'>{truncateText(item.name)}</span>
                 <span className='block text-sm text-[#a7a7a7] truncate'>{item.artist}</span>

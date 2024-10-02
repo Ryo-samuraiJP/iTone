@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <div className='w-full flex justify-between items-center font-semibold'>
         <div className='flex items-center gap-2'>
-          <img onClick={() => navigate('/')} src={assets.logo} alt='' className='w-10 lg:hidden'/>
+          <img onClick={() => navigate('/')} src={assets.logo} alt='iTone logo' className='w-10 lg:hidden'/>
           <div className='hidden sm:flex items-center gap-2'>
             <button className='bg-[#242424] hover:bg-[#3e3e3e] w-10 h-10 rounded-full flex items-center justify-center group transition-all duration-300'>
               <AiFillHome onClick={() => navigate('/')} className='text-2xl text-gray-400 group-hover:text-white transition-all duration-300 cursor-pointer'/>

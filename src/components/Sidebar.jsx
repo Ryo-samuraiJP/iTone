@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
       <div className='bg-[#121212] h-[10%] rounded flex flex-col justify-around'>
         <div onClick={() => navigate('/')} className='pl-2 cursor-pointer flex'>
-          <img src={assets.logo} alt='' className='w-10 mr-2'/>
+          <img src={assets.logo} alt='iTone logo' className='w-10 mr-2'/>
           <p className='text-xl pt-1 italic font-bold'>iTone</p>
         </div>
       </div>

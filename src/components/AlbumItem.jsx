@@ -15,7 +15,7 @@ const AlbumItem = ({ id, image, name, desc }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)} 
     >
-      <img className='rounded' src={image} alt='' />
+      <img className='rounded' src={image} alt='album image' />
       <p className='font-bold mt-2 mb-1'>{name}</p>
       <p className='text-slate-200 text-sm'>{desc}</p>
       {isHovered && (
