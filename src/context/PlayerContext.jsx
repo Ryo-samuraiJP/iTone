@@ -21,6 +21,7 @@ const PlayerContextProvider = (props) => {
     }
   });
   const [currentSongs, setCurrentSongs] = useState(popSongs); 
+  const [currentAlbumId, setCurrentAlbumId] = useState(null);
 
   const play = () => {
     audioRef.current.play();
@@ -73,6 +74,7 @@ const PlayerContextProvider = (props) => {
       pause();
     } else {
       setCurrentSongs(songs);
+      setCurrentAlbumId(genre);
       await setTrack(songs[id]);
       await audioRef.current.play();
       setPlayStatus(true);
@@ -136,7 +138,8 @@ const PlayerContextProvider = (props) => {
     pause,
     playWithId,
     playPrev,
-    playNext
+    playNext,
+    currentAlbumId, setCurrentAlbumId
   }
 
   return (

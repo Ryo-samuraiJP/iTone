@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import PlayButton from './PlayButton'; 
 import { PlayerContext } from '../context/PlayerContext';
 
-const AlbumItem = ({id, image, name, desc}) => {
+const AlbumItem = ({ id, image, name, desc }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false); 
   const { playWithId } = useContext(PlayerContext); 
@@ -19,8 +19,8 @@ const AlbumItem = ({id, image, name, desc}) => {
       <p className='font-bold mt-2 mb-1'>{name}</p>
       <p className='text-slate-200 text-sm'>{desc}</p>
       {isHovered && (
-        <div className='absolute bottom-2 right-2 mb-20 mr-3'>
-          <PlayButton onClick={() => playWithId(0, name)} />
+        <div className='absolute bottom-3 right-3 mb-24 mr-3'>
+          <PlayButton albumId={name} onClick={() => playWithId(0, name)} />
         </div>
       )}
     </div>
