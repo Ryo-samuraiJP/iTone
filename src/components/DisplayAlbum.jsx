@@ -53,7 +53,6 @@ const DisplayAlbum = () => {
   const totalDurationInMinutes = Math.floor(totalDurationInSeconds / 60);
   const hours = Math.floor(totalDurationInMinutes / 60);
   const minutes = totalDurationInMinutes % 60;
-    
   return (
     <>
       <Navbar />
@@ -74,14 +73,14 @@ const DisplayAlbum = () => {
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-[2fr_2fr_0.5fr_0.4fr] sm:grid-cols-[2fr_2fr_0.5fr_0.4fr] mt-10 mb-2 pl-2 text-[#a7a7a7]'>
-        <span className='items-center justify-between'>
-          <p className='mr-4 inline-block font-semibold'>#</p>
-          <p className='inline-block'>Title</p>
+      <div className='grid grid-cols-[1fr_4fr] sm:grid-cols-[2fr_2fr_0.5fr_0.3fr] gap-2 p-2 items-center mt-10 text-[#a7a7a7]'>
+        <span className='flex items-center'>
+          <p className='mx-2 inline-block font-semibold'>#</p>
+          <p className='inline-block ml-16'>Title</p>
         </span>
-        <p className=''>Album</p>
-        <p className='hidden sm:block'>Release</p>
-        <LuClock className='m-auto text-lg' />
+        <p className='hidden sm:block ml-24 lg:ml-16'>Album</p>
+        <p className='hidden sm:block md:mr-6'>Release</p>
+        <LuClock className='m-auto text-lg hidden sm:block' />
       </div>
       <hr className='border-1 border-gray-600 mb-3'/>
       {
@@ -89,27 +88,27 @@ const DisplayAlbum = () => {
           <div 
             onClick={() => playWithId(index, albumData.name)} // Pass the correct index
             key={index}
-            className='grid grid-cols-[2fr_2fr_0.5fr_0.3fr] sm:grid-cols-[2fr_2fr_0.5fr_0.3fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
+            className='grid grid-cols-[1fr_4fr] sm:grid-cols-[2fr_2fr_0.5fr_0.3fr] gap-2 p-2 itemes-center text-[#a7a7a7] hover:bg-[#51505045] cursor-pointer'
           >
             <div className='text-white flex items-center'>
               {track.id === item.id && playStatus ? (
                 <MusicEqualizer />
               ) : (
-                <b className='mr-4 text-[#a7a7a7] font-normal'>{index + 1}</b>
+                <b className='mr-4 text-[#a7a7a7] font-normal w-14 md:w-7 xl:w-6 text-right'>{index + 1}</b>
               )}
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
-              <span className='inline-block'>
-                <span className=''>{item.name}</span>
-                <span className='block text-sm text-[#a7a7a7]'>{item.artist}</span>
+              <span className='flex flex-col w-full'>
+                <span className='truncate'>{item.name}</span>
+                <span className='block text-sm text-[#a7a7a7] truncate'>{item.artist}</span>
               </span>
             </div>
-            <div className='flex items-center'>
+            <div className='hidden items-center sm:flex md:ml-24 lg:ml-16'>
               <p className='text-[15px]'>{item.album}</p>
             </div>
-            <div className='flex items-center'>
+            <div className='fhidden items-center sm:flex'>
               <p className='text-[15px] hidden sm:block'>{item.release}</p>
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='hidden items-center sm:flex justify-center'>
               <p className='text-[15px]'>{item.duration}</p>
             </div>
           </div>
