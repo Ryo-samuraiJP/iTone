@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6"
 const Footer = () => {
   return (
     <div className='w-full mt-20'>
+      <hr className='border-1 border-gray-600 my-9'/>
       <footer className='text-center'>
         <div className='grid grid-cols-1 ml-5 text-left sm:grid-cols-2 lg:grid-cols-4 gap-10'>
           <div className='space-y-2'>
@@ -44,22 +45,22 @@ const Footer = () => {
         </div>
         <div className='flex justify-center gap-5 mt-10'>
           <ul className='flex mt-5 space-x-5'>
-            <li className='h-10 w-10 flex items-center justify-center rounded-full bg-[#242424] hover:bg-[#3e3e3e]'>
+            <li className='h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 bg-[#242424] hover:bg-[#3e3e3e]'>
               <a>
                 <FaInstagram className='text-white text-lg'/>
               </a>
             </li>
-            <li className='h-10 w-10 flex items-center justify-center rounded-full bg-[#242424] hover:bg-[#3e3e3e]'>
+            <li className='h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 bg-[#242424] hover:bg-[#3e3e3e]'>
               <a>
                 <FaXTwitter className='text-white text-lg' />
               </a>
             </li>
-            <li className='h-10 w-10 flex items-center justify-center rounded-full bg-[#242424] hover:bg-[#3e3e3e]'>
+            <li className='h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 bg-[#242424] hover:bg-[#3e3e3e]'>
               <a>
                 <FaFacebook className='text-white text-lg' />
               </a>
             </li>
-            <li className='h-10 w-10 flex items-center justify-center rounded-full bg-[#242424] hover:bg-[#3e3e3e]'>
+            <li className='h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 bg-[#242424] hover:bg-[#3e3e3e]'>
               <a>
                 <FaYoutube className='text-white text-lg' />
               </a>
@@ -75,7 +76,7 @@ const Footer = () => {
           <p className='hover:text-white transition-all duration-100'>About Ads</p>
           <p className='hover:text-white tramnsition-all duration-100'>Accessibility</p>
           <p className='absolute bottom-0 right-0 text-right text-gray-400 hidden sm:block'>&copy; 2024 iTone</p>
-          <p className='text-center text-gray-400 mt-10 block sm:hidden'>&copy; 2024 iTone</p>
+          <p className='text-center text-gray-400 mt-10 mb-20 block sm:hidden'>&copy; 2024 iTone</p>
         </div>
       </footer>
     </div>
