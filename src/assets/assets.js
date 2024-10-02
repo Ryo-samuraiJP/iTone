@@ -135,7 +135,7 @@ export const assets = { logo }
 
 export const popSongs = [
   {
-    id: 0,
+    id: 1,
     image: img0,
     file: song0,
     name: 'Versace On The Floor',
@@ -145,7 +145,7 @@ export const popSongs = [
     duration: '4:21'
   },
   {
-    id: 1,
+    id: 2,
     image: img1,
     file: song1,
     name: 'Loser',
@@ -155,7 +155,7 @@ export const popSongs = [
     duration: '3:24'
   },
   {
-    id: 2,
+    id: 3,
     image: img2,
     file: song2,
     name: 'Watermelon Sugar',
@@ -165,7 +165,7 @@ export const popSongs = [
     duration: '2:54'
   },
   {
-    id: 3,
+    id: 4,
     image: img3,
     file: song3,
     name: 'Levitating (feat. DaBaby)',
@@ -175,7 +175,7 @@ export const popSongs = [
     duration: '3:23'
   },
   {
-    id: 4,
+    id: 5,
     image: img4,
     file: song4,
     name: 'Sucker',
@@ -185,7 +185,7 @@ export const popSongs = [
     duration: '3:01'
   },
   {
-    id: 5,
+    id: 6,
     image: img5,
     file: song5,
     name: 'Don\'t Call Me Up',
@@ -195,7 +195,7 @@ export const popSongs = [
     duration: '2:58'
   },
   {
-    id: 6,
+    id: 7,
     image: img6,
     file: song6,
     name: 'Shape of You',
@@ -205,7 +205,7 @@ export const popSongs = [
     duration: '3:54'
   },
   {
-    id: 7,
+    id: 8,
     image: img7,
     file: song7,
     name: 'Sugar',
@@ -215,7 +215,7 @@ export const popSongs = [
     duration: '3:55'
   },
   {
-    id: 8,
+    id: 9,
     image: img8,
     file: song8,
     name: 'When I Was Your Man',
@@ -225,7 +225,7 @@ export const popSongs = [
     duration: '3:34'
   },
   {
-    id: 9,
+    id: 10,
     image: img9,
     file: song9,
     name: 'Sunroof',
@@ -238,7 +238,7 @@ export const popSongs = [
 
 export const edmSongs = [
   {
-    id: 0,
+    id: 11,
     image: img10,
     file: song10,
     name: 'Closer (feat. Halsay)',
@@ -248,7 +248,7 @@ export const edmSongs = [
     duration: '4:05'
   },
   {
-    id: 1,
+    id: 12,
     image: img11,
     file: song11,
     name: 'Wake Me Up',
@@ -258,7 +258,7 @@ export const edmSongs = [
     duration: '4:08'
   },
   {
-    id: 2,
+    id: 13,
     image: img12,
     file: song12,
     name: 'There Are the Times (feat. JRM)',
@@ -268,7 +268,7 @@ export const edmSongs = [
     duration: '3:09'
   },
   {
-    id: 3,
+    id: 14,
     image: img13,
     file: song13,
     name: 'Stay',
@@ -278,7 +278,7 @@ export const edmSongs = [
     duration: '3:30'
   },
   {
-    id: 4,
+    id: 15,
     image: img14,
     file: song14,
     name: 'Rasputin',
@@ -288,7 +288,7 @@ export const edmSongs = [
     duration: '3:07'
   },
   {
-    id: 5,
+    id: 16,
     image: img15,
     file: song15,
     name: 'I\'m Good (Blue)',
@@ -298,7 +298,7 @@ export const edmSongs = [
     duration: '2:55'
   },
   {
-    id: 6,
+    id: 17,
     image: img16,
     file: song16,
     name: 'Rise (feat. Jack & Jack)',
@@ -308,7 +308,7 @@ export const edmSongs = [
     duration: '3:14'
   },
   {
-    id: 7,
+    id: 18,
     image: img11,
     file: song17,
     name: 'Addicted To You',
@@ -318,7 +318,7 @@ export const edmSongs = [
     duration: '2:28'
   },
   {
-    id: 8,
+    id: 19,
     image: img18,
     file: song18,
     name: 'We Found Love (feat. Rihanna)',
@@ -328,7 +328,7 @@ export const edmSongs = [
     duration: '3:35'
   },
   {
-    id: 9,
+    id: 20,
     image: img19,
     file: song19,
     name: 'Waiting For Love',
@@ -341,7 +341,7 @@ export const edmSongs = [
 
 export const hiphopSongs = [
   {
-    id: 0,
+    id: 21,
     image: img20,
     file: song20,
     name: 'Sill D.R.E. (feat. Snoop Dogg)',
@@ -351,7 +351,7 @@ export const hiphopSongs = [
     duration: '4:31'
   },
   {
-    id: 1,
+    id: 22,
     image: img21,
     file: song21,
     name: 'Circles',
@@ -361,7 +361,7 @@ export const hiphopSongs = [
     duration: '3:35'
   },
   {
-    id: 2,
+    id: 23,
     image: img22,
     file: song22,
     name: 'Players',
@@ -371,7 +371,7 @@ export const hiphopSongs = [
     duration: '2:20'
   },
   {
-    id: 3,
+    id: 24,
     image: img23,
     file: song23,
     name: 'Young, Wild & Free (feat. Bruno Mars)',
@@ -381,7 +381,7 @@ export const hiphopSongs = [
     duration: '3:27'
   },
   {
-    id: 4,
+    id: 25,
     image: img24,
     file: song24,
     name: 'Beautiful Girls',
@@ -391,7 +391,7 @@ export const hiphopSongs = [
     duration: '3:45'
   },
   {
-    id: 5,
+    id: 26,
     image: img25,
     file: song25,
     name: 'Arms Around You (feat. Maluma Swea Lee)',
@@ -401,7 +401,7 @@ export const hiphopSongs = [
     duration: '3:19'
   },
   {
-    id: 6,
+    id: 27,
     image: img26,
     file: song26,
     name: 'Gangstart\'s Paradise',
@@ -411,7 +411,7 @@ export const hiphopSongs = [
     duration: '4:01'
   },
   {
-    id: 7,
+    id: 28,
     image: img27,
     file: song27,
     name: 'Better Now',
@@ -424,7 +424,7 @@ export const hiphopSongs = [
 
 export const rbSongs = [
   {
-    id: 0,
+    id: 29,
     image: img28,
     file: song28,
     name: 'Blinding Lights',
@@ -434,7 +434,7 @@ export const rbSongs = [
     duration: '3:22'
   },
   {
-    id: 1,
+    id: 30,
     image: img29,
     file: song29,
     name: 'Because of You',
@@ -444,7 +444,7 @@ export const rbSongs = [
     duration: '4:27'
   },
   {
-    id: 2,
+    id: 31,
     image: img30,
     file: song30,
     name: 'Yeah 3X',
@@ -454,7 +454,7 @@ export const rbSongs = [
     duration: '4:01'
   },
   {
-    id: 3,
+    id: 32,
     image: img31,
     file: song31,
     name: 'September',
@@ -464,7 +464,7 @@ export const rbSongs = [
     duration: '3:35'
   },
   {
-    id: 4,
+    id: 33,
     image: img34,
     file: song34,
     name: 'All of Me',
@@ -474,7 +474,7 @@ export const rbSongs = [
     duration: '4:30'
   },
   {
-    id: 5,
+    id: 34,
     image: img35,
     file: song35,
     name: 'Take My Breath',
@@ -487,7 +487,7 @@ export const rbSongs = [
 
 export const houseSongs = [
   {
-    id: 0,
+    id: 35,
     image: img36,
     file: song36,
     name: 'Another Time',
@@ -497,7 +497,7 @@ export const houseSongs = [
     duration: '3:30'
   },
   {
-    id: 1,
+    id: 36,
     image: img37,
     file: song37,
     name: 'In My Soul',
@@ -507,7 +507,7 @@ export const houseSongs = [
     duration: '3:15'
   },
   {
-    id: 2,
+    id: 37,
     image: img38,
     file: song38,
     name: 'Run Free (Radio Edit)[feat. IVIE]',
@@ -517,7 +517,7 @@ export const houseSongs = [
     duration: '2:51'
   },
   {
-    id: 3,
+    id: 38,
     image: img39,
     file: song39,
     name: 'Love Tonight (David Guetta Remix Edit)',
@@ -530,7 +530,7 @@ export const houseSongs = [
 
 export const rockSongs = [
   {
-    id: 0,
+    id: 39,
     image: img40,
     file: song40,
     name: 'You Give Love a Bad Name',
@@ -540,7 +540,7 @@ export const rockSongs = [
     duration: '3:43'
   },
   {
-    id: 1,
+    id: 40,
     image: img40,
     file: song41,
     name: 'Livin\' On a Prayer',
@@ -550,7 +550,7 @@ export const rockSongs = [
     duration: '4:09'
   },
   {
-    id: 2,
+    id: 41,
     image: img42,
     file: song42,
     name: 'Viva La Vida',
@@ -560,7 +560,7 @@ export const rockSongs = [
     duration: '4:02'
   },
   {
-    id: 3,
+    id: 42,
     image: img43,
     file: song43,
     name: '世界が終わるまでは...',
@@ -570,7 +570,7 @@ export const rockSongs = [
     duration: '5:16'
   },
   {
-    id: 4,
+    id: 43,
     image: img44,
     file: song44,
     name: '花占い',
@@ -580,7 +580,7 @@ export const rockSongs = [
     duration: '3:28'
   },
   {
-    id: 5,
+    id: 44,
     image: img45,
     file: song45,
     name: 'I Don\'t Want to Miss a Thing',
@@ -590,7 +590,7 @@ export const rockSongs = [
     duration: '4:59'
   },
   {
-    id: 6,
+    id: 45,
     image: img46,
     file: song46,
     name: 'Beggin',
@@ -600,7 +600,7 @@ export const rockSongs = [
     duration: '3:32'
   },
   {
-    id: 7,
+    id: 46,
     image: img47,
     file: song47,
     name: 'One Way Ticket',
@@ -610,7 +610,7 @@ export const rockSongs = [
     duration: '3:37'
   },
   {
-    id: 8,
+    id: 47,
     image: img48,
     file: song48,
     name: 'ドライフラワー',
@@ -620,7 +620,7 @@ export const rockSongs = [
     duration: '4:46'
   },
   {
-    id: 9,
+    id: 48,
     image: img49,
     file: song49,
     name: '心絵',
@@ -633,7 +633,7 @@ export const rockSongs = [
 
 export const jpopSongs = [
   {
-    id: 0,
+    id: 49,
     image: img50,
     file: song50,
     name: 'いとしのエリー',
@@ -643,7 +643,7 @@ export const jpopSongs = [
     duration: '4:25'
   },
   {
-    id: 1,
+    id: 50,
     image: img51,
     file: song51,
     name: '廻廻奇奇譚',
@@ -653,7 +653,7 @@ export const jpopSongs = [
     duration: '3:39'
   },
   {
-    id: 2,
+    id: 51,
     image: img52,
     file: song52,
     name: '水平線',
@@ -663,7 +663,7 @@ export const jpopSongs = [
     duration: '4:45'
   },
   {
-    id: 3,
+    id: 52,
     image: img53,
     file: song53,
     name: 'ずっと好きだった',
@@ -673,7 +673,7 @@ export const jpopSongs = [
     duration: '4:07'
   },
   {
-    id: 4,
+    id: 53,
     image: img54,
     file: song54,
     name: 'I LOVE...',
@@ -683,7 +683,7 @@ export const jpopSongs = [
     duration: '4:41'
   },
   {
-    id: 5,
+    id: 54,
     image: img55,
     file: song55,
     name: 'Rolling star',
@@ -693,7 +693,7 @@ export const jpopSongs = [
     duration: '3:11'
   },
   {
-    id: 6,
+    id: 55,
     image: img56,
     file: song56,
     name: 'DAN DAN 心魅かれてく',
@@ -706,7 +706,7 @@ export const jpopSongs = [
 
 export const alternativeSongs = [
   {
-    id: 0,
+    id: 56,
     image: img57,
     file: song57,
     name: 'Someone You Loved',
@@ -716,7 +716,7 @@ export const alternativeSongs = [
     duration: "3:02"
   },
   {
-    id: 1,
+    id: 57,
     image: img58,
     file: song58,
     name: 'Dance Monkey',
@@ -726,7 +726,7 @@ export const alternativeSongs = [
     duration: "3:30"
   },
   {
-    id: 2,
+    id: 58,
     image: img59,
     file: song59,
     name: 'Someone To You',
@@ -736,7 +736,7 @@ export const alternativeSongs = [
     duration: "3:39"
   },
   {
-    id: 3,
+    id: 59,
     image: img60,
     file: song60,
     name: 'Feel It Still',
@@ -746,7 +746,7 @@ export const alternativeSongs = [
     duration: "2:43"
   },
   {
-    id: 4,
+    id: 60,
     image: img61,
     file: song61,
     name: 'A Sky Full of Stars',
@@ -756,7 +756,7 @@ export const alternativeSongs = [
     duration: "4:29"
   },
   {
-    id: 5,
+    id: 61,
     image: img62,
     file: song62,
     name: 'The Phoenix',
