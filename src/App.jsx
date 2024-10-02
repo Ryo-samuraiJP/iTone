@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar';
 import MusicPlayer from './components/MusicPlayer';
 import Display from './components/Display';
 import { PlayerContext } from './context/PlayerContext';
-import MobileNavbar from './components/MobileNavbar';
+// import MobileNavbar from './components/MobileNavbar';
 
 const App = () => {
   const { audioRef, track } = useContext(PlayerContext);
@@ -15,7 +15,7 @@ const App = () => {
         <Display />
       </div>
       <MusicPlayer />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       <audio ref={audioRef} src={track.file} preload='auto'></audio>
     </div>
   );

@@ -12,7 +12,7 @@ const MusicPlayer = () => {
   const { track, seekBg, seekBar, seekPoint, playStatus, play, pause, time, playPrev, playNext } = useContext(PlayerContext);
 
   return (
-    <div className='fixed bottom-7 sm:bottom-0 left-0 right-0 z-50 h-[20%] sm:h-[10%] bg-black flex justify-between items-center text-white pt-3 sm:pt-0 mb-5 sm:mb-0 px-4'>
+    <div className='bottom-7 sm:bottom-0 left-0 right-0 z-50 h-[10%] bg-black flex justify-between items-center text-white pt-3 sm:pt-0 mb-5 sm:mb-0 px-4'>
       <div className='hidden sm:flex items-center gap-4 w-1/5'>
         <img className='w-12' src={track.image} alt='currently playing song image' />
         <div className='truncate w-full'>
