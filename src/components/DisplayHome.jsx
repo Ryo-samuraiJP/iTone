@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import { albumPlaylists } from '../assets/assets';
 import AlbumItem from './AlbumItem';
@@ -6,13 +6,35 @@ import { PlayerContext } from '../context/PlayerContext';
 
 const DisplayHome = () => {
   const { playWithId } = useContext(PlayerContext);
+  const recommendedRef = useRef(null);
+  const featuredRef = useRef(null);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        e.currentTarget.scrollLeft += e.deltaY;
+      }
+    };
+
+    const recommendedContainer = recommendedRef.current;
+    const featuredContainer = featuredRef.current;
+
+    recommendedContainer.addEventListener('wheel', handleWheel);
+    featuredContainer.addEventListener('wheel', handleWheel);
+
+    return () => {
+      recommendedContainer.removeEventListener('wheel', handleWheel);
+      featuredContainer.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
 
   return (
     <>
       <Navbar />
       <div className='mb-4'>
         <h1 className='my-5 font-bold text-2xl'>Recommended for you</h1>
-        <div className='flex overflow-auto'>
+        <div ref={recommendedRef} className='flex overflow-x-auto scroll-auto'>
           {albumPlaylists.slice(0, 8).map((item, index) => (
             <AlbumItem 
               key={index} 
@@ -27,7 +49,7 @@ const DisplayHome = () => {
       </div>
       <div className='mb-4'>
         <h1 className='my-5 font-bold text-2xl'>Featured Charts</h1>
-        <div className='flex overflow-auto'>
+        <div ref={featuredRef} className='flex overflow-x-auto scroll-auto'>
           {albumPlaylists.slice(8).map((item, index) => (
             <AlbumItem 
               key={index}
