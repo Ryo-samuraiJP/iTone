@@ -53,6 +53,14 @@ const DisplayAlbum = () => {
   const totalDurationInMinutes = Math.floor(totalDurationInSeconds / 60);
   const hours = Math.floor(totalDurationInMinutes / 60);
   const minutes = totalDurationInMinutes % 60;
+
+  const truncateText = (text) => {
+    if (window.innerWidth <= 640) {
+      return text.length > 25 ? text.slice(0, 25) + '...' : text;
+    }
+    return text;
+  }
+    
   return (
     <>
       <Navbar />
@@ -98,7 +106,7 @@ const DisplayAlbum = () => {
               )}
               <img className='inline w-10 mr-5 rounded' src={item.image} alt='' />
               <span className='flex flex-col w-full'>
-                <span className='truncate'>{item.name}</span>
+                <span className='truncate'>{truncateText(item.name)}</span>
                 <span className='block text-sm text-[#a7a7a7] truncate'>{item.artist}</span>
               </span>
             </div>
