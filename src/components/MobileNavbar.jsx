@@ -6,7 +6,7 @@ import { AiFillHome } from 'react-icons/ai';
 const MobileNavbar = () => {
   const navigate = useNavigate();
   return (
-    <div className='fixed bottom-0 left-0 right-0 flex justify-around items-center h-16 bg-black text-gray-400 sm:hidden'>
+    <div className='fixed bottom-4 left-0 right-0 flex justify-around items-center h-10 bg-black text-gray-400 sm:hidden z-40'>
       <button to='/' className='flex flex-col items-center cursor-pointer hover:text-white transition-all duration-300'>
         <MdOutlineLibraryMusic className='text-2xl' />
       </button>
