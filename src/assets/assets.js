@@ -854,7 +854,7 @@ export const albumPlaylists = [
     name: "All J-Pop",
     image: jpop,
     desc: "Today's J-Pop with back number, FIELS OF VIEW, Eve, YUI, and more.",
-    bgColor: "#0B5394",
+    bgColor: "#1E2E3D",
     songs: jpopSongs
   },
   {   
