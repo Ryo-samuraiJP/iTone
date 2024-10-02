@@ -1,6 +1,5 @@
 import React from 'react';
-import { MdOutlineLibraryMusic } from "react-icons/md";
-import { GoPlus } from "react-icons/go";
+import { MdOutlineAdd, MdOutlineLibraryMusic } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { assets } from '../assets/assets';
 
@@ -14,20 +13,15 @@ const Sidebar = () => {
           <img src={assets.logo} alt='' className='w-10 mr-2'/>
           <p className='text-xl pt-1 italic font-bold'>iTone</p>
         </div>
-        {/* <div className='flex items-center gap-3 pl-4 cursor-pointer'>
-          <AiFillHome onClick={() => navigate('/')} className='text-2xl'/>
-          <IoIosSearch className='text-2xl'/>
-          <p className='font-normal'>Search</p>
-        </div> */}
       </div>
-      <div className='bg-[#121212] h-[85%] rounded'>
+      <div className='bg-[#121212] h-[90%] rounded'>
         <div className='p-4 flex item-center justify-between'>
           <button className='flex items-center gap-3 group cursor-pointer'>
             <MdOutlineLibraryMusic className='text-3xl text-gray-400 group-hover:text-white transition-all duration-300'/>
             <p className='font-bold text-gray-400 group-hover:text-white transition-all duration-300'>Your Library</p>
           </button>
           <button className='flex items-center gap-3 cursor-pointer rounded-full px-1 hover:bg-[#242424] transition-all duration-300'>
-            <GoPlus className='text-2xl text-gray-400 hover:text-white transition-all duration-300'/>
+            <MdOutlineAdd className='text-2xl text-gray-400 hover:text-white transition-all duration-300'/>
           </button>
         </div>
         <div className='p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4'>
