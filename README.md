@@ -10,11 +10,12 @@
 ## Features
 - **User-friendly** interface and guidance via home and arrow buttons to navigate different UI components.
 - **Invisible scroll bar functionality** allows users to scroll playlists horizontally using a mouse.
-- **The blue play/pause button** enables users to directly play and pause tracks based on the hovering playlist without opening to see inside tracks. 
+- **The blue play/pause button** enables users to play and pause tracks directly based on the hovering playlist without opening it to see inside tracks. 
 - Displaying the album details such as title, artist, album name, release year, track duration, and total time based on the clicked playlist.
 - **Music player** is at the bottom of the interface, where users can control the music player (e.g., clicking the previous button to go back to the previous song, the next button to skip to the next song, the play/pause button to play and pause songs.
 - **Seek bar** in the music player also enables users to move the seek point to play songs from the middle.
-- **A Fully responsive web interface** increases the ease of use on multiple devices, ensuring  customer satisfaction. 
+- **Music equalizer animation** at the track number visualizes what song is currently playing.
+- **A fully responsive web interface** increases the ease of use on multiple devices, ensuring  customer satisfaction. 
 
 ## Uses
 [Demo Video](https://github.com/user-attachments/assets/c7e15f3c-8968-48e4-9a02-cb53b03069fb)
