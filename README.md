@@ -1,5 +1,5 @@
 # iTone
-[iTone](https://i-tone.vercel.app/) is a modern and intuitive music application inspired by Spotify and designed to enhance user music listening experience. The app is developed using modern front-end build tool, library, and framework such as Vite, React, and Tailwind CSS and deployed on Vercel, enabling faster and smoother development. 
+[iTone](https://itone.vercel.app/) is a modern and intuitive music application inspired by Spotify and designed to enhance user music listening experience. The app is developed using modern front-end build tool, library, and framework such as Vite, React, and Tailwind CSS and deployed on Vercel, enabling faster and smoother development. 
 
 
 ## Table of Contents
