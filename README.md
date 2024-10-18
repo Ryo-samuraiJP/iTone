@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Features](#features)
+- [Live Demo](#live-demo)
 - [Uses](#uses)
 - [Technologies Used](#technologies-used)
 
@@ -16,6 +17,9 @@
 - **Seek bar** in the music player also enables users to move the seek point to play songs from the middle.
 - **Music equalizer animation** at the track number visualizes what song is currently playing.
 - **A fully responsive web interface** increases the ease of use on multiple devices, ensuring  customer satisfaction. 
+
+## Live Demo
+Link: https://itone.vercel.app/
 
 ## Uses
 [Demo Video](https://github.com/user-attachments/assets/c7e15f3c-8968-48e4-9a02-cb53b03069fb)
