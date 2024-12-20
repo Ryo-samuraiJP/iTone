@@ -5,7 +5,7 @@
 ## Table of Contents
 - [Features](#features)
 - [Live Demo](#live-demo)
-- [Uses](#uses)
+- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 
 ## Features
@@ -21,7 +21,7 @@
 ## Live Demo
 Link: https://itone.vercel.app/
 
-## Uses
+## Usage
 [Demo Video](https://github.com/user-attachments/assets/c7e15f3c-8968-48e4-9a02-cb53b03069fb)
 
 ## Technologies Used
