@@ -6,7 +6,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo](#demo)
+- [Video Demo](#video-demo)
 - [License](https://github.com/Ryo-samuraiJP/iTone/blob/main/LICENSE.md)
 
 ## Features
@@ -27,11 +27,10 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoSize=auto)
 
 ## Installation
-- Prerequisties: npm installed on your local machine.
 
-1. Clone this repo: 
+1. Clone the repo: 
 ```
-https://github.com/Ryo-samuraiJP/iTone.git
+git clone https://github.com/your_username/iTone.git
 ```
 
 2. Install dependencies. 
@@ -56,12 +55,7 @@ npm run dev
 - Vite
 - Tailwind CSS
 
-## Demo
-
-### Live
-https://itone.vercel.app/
-
-### Video
+## Video Demo
 [Demo Video](https://github.com/user-attachments/assets/c7e15f3c-8968-48e4-9a02-cb53b03069fb)
 
 
