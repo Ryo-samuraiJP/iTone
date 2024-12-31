@@ -28,6 +28,8 @@
 
 ## Installation
 
+**Prerequisite**: Git is installed on your local machine.
+
 1. Clone the repo: 
 ```
 git clone https://github.com/your_username/iTone.git
